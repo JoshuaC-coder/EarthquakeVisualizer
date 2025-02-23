@@ -15,4 +15,4 @@ Explore earthquake data on an interactive map, with customizable settings to fil
 ![screenshot](img/demoScreenshot.png)
 
 ### Access here:
-  -link
+  [-link](https://joshuac-coder.github.io/GeoPulse/)

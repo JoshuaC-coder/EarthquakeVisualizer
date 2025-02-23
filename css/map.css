@@ -1,0 +1,9 @@
+/* Map */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Chart container styles */
+.chart-container {
+  height: calc(100vh - 128px);
+}

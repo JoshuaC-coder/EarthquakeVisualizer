@@ -1,0 +1,232 @@
+/* Sidenav */
+/* Ensure the sidebar does not overlap header/footer */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute !important;
+    height: calc(100% - 70px - 59px);
+    top: 65px;
+    overflow-y: auto;
+    width: 250px;
+}
+
+/* Remove dimming effect when opening side nav */
+.sidenav-overlay {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    height: 64px;
+}
+
+/* Sidenav containers*/
+/* Ensures that the sidenav container are in their respective areas */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.input-container-mid {
+    padding-top: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.input-container-down {
+    padding-top: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+/* Center items in the middle section */
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
+/* Change the the color of the slider */
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #0d47a1 !important;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #1565c0 !important;
+}
+
+input[type="range"]::-webkit-slider-thumb::after {
+
+    background-color: #0d47a1 !important;
+    color: white !important;
+}
+
+.range-field input[type="range"]+.thumb {
+    background-color: #0d47a1 !important;
+}
+
+.range-field input[type="range"]+.thumb span {
+    color: white !important;
+}
+
+/* Change the text and border color of the date picker */
+.datepicker-date-display {
+    background-color: #0d47a1 !important;
+}
+
+.datepicker-table td.is-today {
+    background-color: #1565c0 !important;
+    color: white !important;
+}
+
+.datepicker-controls .select-month,
+.datepicker-controls .select-year {
+    color: white !important;
+}
+
+.datepicker-table td.is-selected {
+    background-color: #0d47a1 !important;
+    color: white !important;
+}
+
+.datepicker-modal {
+    font-family: 'Parkinsans', sans-serif;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-80%, -60%) !important;
+    width: 600px !important;
+    max-width: 90vw;
+    background-color: white;
+    z-index: 9999 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the OK and Cancel buttons inside the datepicker */
+.datepicker-container .datepicker-done,
+.datepicker-container .datepicker-cancel {
+    font-family: 'Parkinsans', sans-serif;
+
+    background-color: #1565c0 !important;
+    color: white !important;
+    margin: 0 10px;
+}
+
+/* Remove teal hover effect and make arrows blue */
+.datepicker-controls .month-prev,
+.datepicker-controls .month-next {
+    color: #1565c0 !important;
+}
+
+/* Ensure when clicking the month navigation, there's a circular highlight */
+.datepicker-controls .month-prev:focus,
+.datepicker-controls .month-next:focus {
+    background-color: rgba(21, 101, 192, 0.2) !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust hover effect for circular highlight */
+.datepicker-controls .month-prev:hover,
+.datepicker-controls .month-next:hover {
+    background-color: rgba(21, 101, 192, 0.3) !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Apply parkinsans font to texts */
+.slider-label {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 18px;
+    color: #0d47a1;
+    margin-bottom: 5px;
+}
+
+.brand-logo {
+    color: #0d47a1 !important;
+    font-family: 'Parkinsans', sans-serif;
+
+}
+
+.nav-trigger {
+    text-transform: none;
+    margin-right: 20px;
+    font-family: 'Parkinsans', sans-serif;
+
+}
+
+.submit-button {
+    text-transform: none;
+    font-family: 'Parkinsans', sans-serif;
+
+}
+
+.datepicker {
+    font-family: 'Parkinsans', sans-serif;
+    text-align: center;
+}
+
+/* Alter sizes of logos */
+.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+.search-icon {
+    height: 24px;
+    width: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Custom divider for start date above it */
+.custom-divider {
+    width: 110%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Apply Parkinsans font to modals and make them blue */
+.modal-content {
+    font-family: 'Parkinsans', sans-serif;
+}
+
+.modal-close {
+    background-color: #0d47a1;
+    color: white;
+    font-family: 'Parkinsans', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+/* Prevent color change on hover */
+.modal-close:hover {
+    background-color: #0d47a1;
+    color: white;
+}

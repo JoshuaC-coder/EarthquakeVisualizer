@@ -1,0 +1,128 @@
+<!-- Author: Joshua Cao -->
+<!-- Project: GeoPulse -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoPulse</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- AMCharts5 -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- CSS file and JS files -->
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/map.css" rel="stylesheet">
+  <script src="js/map.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/earthquake.js" defer></script>
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Parkinsans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Error Modal -->
+  <div id="error-modal" class="modal">
+    <div class="modal-content">
+      <h5>Error</h5>
+      <p id="error-message"></p>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-close btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo">
+        <img src="img/logo.png" alt="Earthquake Visualizer Logo" class="logo">
+        GeoPulse
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <button class="btn blue darken-4 nav-trigger" data-target="slide-out">
+          Toggle Sidebar
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidenav -->
+  <ul id="slide-out" class="sidenav">
+    <form action="#">
+      <!-- Divider at the top (optional) -->
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <!-- Magnitude Section -->
+      <div class="input-container">
+        <label for="test5" class="slider-label">Min Magnitude</label>
+        <p class="range-field">
+          <input type="range" id="test5" min="0" max="10" step="0.1" value="0" /> <!-- Set value to 0 -->
+        </p>
+      </div>
+
+      <!-- Divider after Magnitude -->
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <!-- Start and End Date Section with Divider placed right above Start Date -->
+      <div class="input-container-mid">
+        <div class="custom-divider"></div> <!-- Custom divider placed here -->
+        <label for="start-date" class="slider-label">Start Date</label>
+        <input type="text" class="datepicker" id="start-date">
+
+        <label for="end-date" class="slider-label">End Date</label>
+        <input type="text" class="datepicker" id="end-date">
+      </div>
+
+      <!-- Divider after Dates -->
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <!-- Search Button Section -->
+      <div class="input-container-down">
+        <button class="btn waves-effect waves-light blue darken-4 submit-button" type="submit" name="action">
+          Search
+          <img src="img/search.png" alt="Search" class="search-icon">
+        </button>
+      </div>
+
+    </form>
+  </ul>
+
+  <!-- Main Content (Map) -->
+  <div class="container">
+    <div id="chartdiv" class="chart-container"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue darken-4" style="font-family: 'Parkinsans', sans-serif;">
+
+    <div class="footer-copyright">
+      <div class="center-align container">
+        © 2025 GeoPulse
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

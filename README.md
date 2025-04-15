@@ -1,4 +1,4 @@
-# GeoPulse
+# Earthquake Visualizer
 Explore earthquake data on an interactive map, with customizable settings to filter by magnitude, date, and location.
 
 ## Filter by
